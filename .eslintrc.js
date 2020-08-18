@@ -26,7 +26,8 @@ module.exports = {
         'spaced-comment': 0,
         'arrow-body-style': ['error', 'as-needed', { requireReturnForObjectLiteral: true }],
         'max-classes-per-file': ['error', 100],
-        '@typescript-eslint/ban-ts-ignore': 'off'
+        '@typescript-eslint/ban-ts-ignore': 'off',
+        'space-before-function-paren': ['error', 'never']
     },
     overrides: [
         {

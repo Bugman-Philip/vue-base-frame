@@ -8,7 +8,19 @@
         <router-view/>
     </div>
 </template>
+<script lang="ts">
+import { Utils } from '@/utils';
+import { Vue } from 'vue-property-decorator';
 
+export default class App extends Vue {
+    mounted() {
+        const element: HTMLElement | null = window.document.querySelector('html');
+        if (element !== null) {
+            element.style.fontSize = Utils.getRem() + 'px';
+        }
+    }
+}
+</script>
 <style lang="scss">
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

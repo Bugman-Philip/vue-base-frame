@@ -10,9 +10,12 @@ module.exports = {
                     terserOptions: {
                         compress: {
                             warnings: false,
-                            dropConsole: true,
-                            dropDebugger: true,
-                            pureFuncs: ['console.log']
+                            // eslint-disable-next-line @typescript-eslint/camelcase
+                            drop_console: true,
+                            // eslint-disable-next-line @typescript-eslint/camelcase
+                            drop_debugger: true,
+                            // eslint-disable-next-line @typescript-eslint/camelcase
+                            pure_funcs: ['console.log']
                         }
                     }
                 })
